@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koodos/capacitor-app-actions.git"
+    "url": "git+https://github.com/koodoslabs/capacitor-app-actions.git"
   },
   "bugs": {
-    "url": "https://github.com/koodos/capacitor-app-actions/issues"
+    "url": "https://github.com/koodoslabs/capacitor-app-actions/issues"
   },
   "keywords": [
     "capacitor",
