@@ -9,17 +9,17 @@ importers:
   .:
     devDependencies:
       '@capacitor/android':
-        specifier: next
-        version: 5.0.0-rc.2(@capacitor/core@5.0.0-rc.2)
+        specifier: ^6.0.0
+        version: 6.0.0(@capacitor/core@6.0.0)
       '@capacitor/core':
-        specifier: next
-        version: 5.0.0-rc.2
+        specifier: ^6.0.0
+        version: 6.0.0
       '@capacitor/docgen':
-        specifier: ^0.0.10
-        version: 0.0.10
+        specifier: ^0.2.2
+        version: 0.2.2
       '@capacitor/ios':
-        specifier: next
-        version: 5.0.0-rc.2(@capacitor/core@5.0.0-rc.2)
+        specifier: ^6.0.0
+        version: 6.0.0(@capacitor/core@6.0.0)
       '@ionic/eslint-config':
         specifier: ^0.3.0
         version: 0.3.0(eslint@7.11.0)(typescript@4.0.3)
@@ -89,37 +89,38 @@ packages:
       regenerator-runtime: 0.13.11
     dev: true
 
-  /@capacitor/android@5.0.0-rc.2(@capacitor/core@5.0.0-rc.2):
-    resolution: {integrity: sha512-1i5FKrXzQzmcESvGb6p5xkBkuCEUhT1kiba6x5GL3i/l8d7rpP9hZoEiYRa4tDyC92WdHhM2yRGlISMhpOmXMw==}
+  /@capacitor/android@6.0.0(@capacitor/core@6.0.0):
+    resolution: {integrity: sha512-NwL87VO9F1WY/EgvJZN9pIhjejq688k2fRW6XWNLVe3cgGE6nUb9J34KI68fhx3139cf2LVGPUYs+mwZC8esiQ==}
     peerDependencies:
-      '@capacitor/core': ^5.0.0-rc.2
+      '@capacitor/core': ^6.0.0
     dependencies:
-      '@capacitor/core': 5.0.0-rc.2
+      '@capacitor/core': 6.0.0
     dev: true
 
-  /@capacitor/core@5.0.0-rc.2:
-    resolution: {integrity: sha512-1byUyb58egyjMrwnpRnzYQtli7GuwalIDoz56eiHMTI47TZWsEW9x7t5/9BtuO8RVoOe/hhmcktGazTiXSGCPA==}
+  /@capacitor/core@6.0.0:
+    resolution: {integrity: sha512-NvxIQsJcMiIV+Le1DilR2GGyQQbDInfXK1UywGROQ5mycdFlW5XoAPZ+MKnFGB123RoEgE3uhDGgwTXUmSlX9A==}
     dependencies:
-      tslib: 2.6.0
+      tslib: 2.6.2
     dev: true
 
-  /@capacitor/docgen@0.0.10:
-    resolution: {integrity: sha512-zHzWBDiidONOKipn1ZCc1Q8FvnmKDRXBl0NU/haiWXek9WhrhmGhN5Vbm9RK9LXkEKfkdJn6G+eht5wqVrJCsA==}
+  /@capacitor/docgen@0.2.2:
+    resolution: {integrity: sha512-617jB5DlKjUljxfoANORWeqffsHqHekckH48oslKWFGzfCHYIAEPfJfMa5M4mVSzn2ifSvWB5C3st4augwhl5w==}
     engines: {node: '>=14.5.0'}
     hasBin: true
     dependencies:
-      colorette: 1.4.0
+      '@types/node': 14.18.63
+      colorette: 2.0.20
       github-slugger: 1.5.0
       minimist: 1.2.8
-      typescript: 4.0.3
+      typescript: 4.2.4
     dev: true
 
-  /@capacitor/ios@5.0.0-rc.2(@capacitor/core@5.0.0-rc.2):
-    resolution: {integrity: sha512-jYLYuNbVkDS77jZTRVRnb59n+tg+5VrTXlqxm0d7qXy26SCQkucFP85KcJTMeRDTvBiMvZ7AXFnG6WIrxCnUPA==}
+  /@capacitor/ios@6.0.0(@capacitor/core@6.0.0):
+    resolution: {integrity: sha512-7mAs3gjWiE5DPM4AGPduqFSDGXCPwwqQRMzbohVway7/cTWnHomHV8mIojMZE4GILeWO2fILbyu3C8q9pHg2vg==}
     peerDependencies:
-      '@capacitor/core': ^5.0.0-rc.2
+      '@capacitor/core': ^6.0.0
     dependencies:
-      '@capacitor/core': 5.0.0-rc.2
+      '@capacitor/core': 6.0.0
     dev: true
 
   /@eslint/eslintrc@0.1.3:
@@ -174,7 +175,7 @@ packages:
     engines: {node: '>=16.0.0'}
     dependencies:
       debug: 4.3.4
-      tslib: 2.6.0
+      tslib: 2.6.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -186,7 +187,7 @@ packages:
       '@types/fs-extra': 8.1.2
       debug: 4.3.4
       fs-extra: 9.1.0
-      tslib: 2.6.0
+      tslib: 2.6.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -196,7 +197,7 @@ packages:
     engines: {node: '>=16.0.0'}
     dependencies:
       debug: 4.3.4
-      tslib: 2.6.0
+      tslib: 2.6.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -210,7 +211,7 @@ packages:
       debug: 4.3.4
       signal-exit: 3.0.7
       tree-kill: 1.2.2
-      tslib: 2.6.0
+      tslib: 2.6.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -220,7 +221,7 @@ packages:
     engines: {node: '>=16.0.0'}
     dependencies:
       debug: 4.3.4
-      tslib: 2.6.0
+      tslib: 2.6.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -236,7 +237,7 @@ packages:
       '@ionic/utils-terminal': 2.3.4
       cross-spawn: 7.0.3
       debug: 4.3.4
-      tslib: 2.6.0
+      tslib: 2.6.2
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -251,7 +252,7 @@ packages:
       slice-ansi: 4.0.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
-      tslib: 2.6.0
+      tslib: 2.6.2
       untildify: 4.0.0
       wrap-ansi: 7.0.0
     transitivePeerDependencies:
@@ -291,6 +292,10 @@ packages:
 
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/node@14.18.63:
+    resolution: {integrity: sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==}
     dev: true
 
   /@types/node@20.4.1:
@@ -665,8 +670,8 @@ packages:
     resolution: {integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==}
     dev: true
 
-  /colorette@1.4.0:
-    resolution: {integrity: sha512-Y2oEozpomLn7Q3HFP7dpww7AtMJplbM9lGZP6RDfHqmbeRjiwRg4n6VM6j4KLmRke85uWEI7JqF17f3pqdRA0g==}
+  /colorette@2.0.20:
+    resolution: {integrity: sha512-IfEDxwoWIjkeXL1eXcDiow4UbKjhLdq6/EuSVR9GMN7KVH3r9gQ83e73hsz1Nd1T3ijd5xv1wcWRYO+D6kCI2w==}
     dev: true
 
   /concat-map@0.0.1:
@@ -2165,8 +2170,8 @@ packages:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
 
-  /tslib@2.6.0:
-    resolution: {integrity: sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==}
+  /tslib@2.6.2:
+    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: true
 
   /tsutils@3.21.0(typescript@4.0.3):
@@ -2206,6 +2211,12 @@ packages:
 
   /typescript@4.0.3:
     resolution: {integrity: sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
+
+  /typescript@4.2.4:
+    resolution: {integrity: sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
